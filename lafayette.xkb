@@ -1,12 +1,11 @@
 //
 // File          : lafayette.xkb
-// Last modified : 2013-01-19
-// Project page  : http://kazhack.org/lafayette/
+// Project page  : http://fabi1cazenave.github.com/qwerty-lafayette/
 // Author        : Fabien Cazenave
 // Licence       : WTFPL
-// vim           : ft=xkb:fdm=indent:
 //
 // US-QWERTY layout, French variant
+//
 // To apply this keymap, use:
 //   xkbcomp -w9 lafayette.xkb $DISPLAY
 //
@@ -25,37 +24,37 @@ xkb_keymap {
   };
   xkb_compatibility { include "complete" };
 
-  // Couche Qwerty : (ANSI / pc104)
+  // Couche Qwerty : (ANSI/pc104)
   // ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━┓
-  // │ ~   │ ! ¡ │ @ ‘ │ # ’ │ $ £ │ % ‰ │ ^   │ &   │ *   │ (   │ )   │ _   │ + ± ┃          ┃
-  // │ `   │ 1 „ │ 2 “ │ 3 ” │ 4 € │ 5 ¥ │ 6   │ 7   │ 8   │ 9   │ 0 ° │ - — │ = ≠ ┃ ⌫        ┃
+  // │ ~   │ ! ¡ │ @ ‘ │ # ’ │ $ ¢ │ % ‰ │ ^   │ &   │ *   │ (   │ )   │ _   │ + ± ┃          ┃
+  // │ `   │ 1 „ │ 2 “ │ 3 ” │ 4 £ │ 5 € │ 6   │ 7   │ 8   │ 9   │ 0 ° │ - — │ = ≠ ┃ ⌫        ┃
   // ┢━━━━━┷━━┱──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┺━━┯━━━━━━━┩
   // ┃        ┃ Q   │ W   │ E   │ R ™ │ T   │ Y   │ U   │ I   │ O   │ P   │ « { │ » } │ |     │
-  // ┃ ↹      ┃   æ │   é │   è │   ® │   þ │     │   ù │   ↑ │   œ │   § │ ^ [ │ ´ ] │ \     │
+  // ┃ ↹      ┃   æ │   é │   è │   ® │   þ │   ¥ │   ù │   ĳ │   œ │   § │ ^ [ │ ¨ ] │ \     │
   // ┣━━━━━━━━┻┱────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┲━━━━┷━━━━━━━┪
-  // ┃         ┃ A   │ S   │ D   │ F ª │ G ¢ │ H   │ J   │ K   │ L   │ ¨   │ "   ┃            ┃
-  // ┃ ⇬       ┃   à │   ß │   ð │   ſ │   © │   † │   ← │   ↓ │   → │ ¤ ` │ '   ┃ ⏎          ┃
+  // ┃         ┃ A   │ S   │ D   │ F ª │ G ¢ │ H   │ J   │ K   │ L   │ ¤   │ "   ┃            ┃
+  // ┃ ⇬       ┃   à │   ß │   ð │   ſ │   © │   ← │   ↓ │   ↑ │   → │   ` │ '   ┃ ⏎          ┃
   // ┣━━━━━━━━━┻━━┱──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┲━━┻━━━━━━━━━━━━┫
   // ┃            ┃ Z   │ X   │ C   │ V   │ B   │ N   │ M º │ ;   │ :   │ ? ¿ ┃               ┃
-  // ┃ ⇧          ┃   < │   > │   ç │   ŭ │     │   ñ │   µ │ , • │ . … │ / \ ┃ ⇧             ┃
+  // ┃ ⇧          ┃   < │   > │   ç │   ŭ │   † │   ñ │   µ │ , • │ . … │ / \ ┃ ⇧             ┃
   // ┣━━━━━━━┳━━━━┻━━┳━━┷━━━━┱┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━━┳━┷━━━━━╋━━━━━━━┳━━━━━━━┫
   // ┃       ┃       ┃       ┃ ⍽ Espace insécable             ┃       ┃       ┃       ┃       ┃
   // ┃ Ctrl  ┃ super ┃ Alt   ┃ ␣ Espace                     ` ┃ AltGr ┃ super ┃ menu  ┃ Ctrl  ┃
   // ┗━━━━━━━┻━━━━━━━┻━━━━━━━┹────────────────────────────────┺━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
 
-  // Couche Qwerty : (ISO / pc105)
+  // Couche Qwerty : (ISO/pc105)
   // ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━┓
-  // │ ~   │ ! ¡ │ @ ‘ │ # ’ │ $ £ │ % ‰ │ ^   │ &   │ *   │ (   │ )   │ _   │ + ± ┃          ┃
-  // │ `   │ 1 „ │ 2 “ │ 3 ” │ 4 € │ 5 ¥ │ 6   │ 7   │ 8   │ 9   │ 0 ° │ - — │ = ≠ ┃ ⌫        ┃
+  // │ ~   │ ! ¡ │ @ ‘ │ # ’ │ $ ¢ │ % ‰ │ ^   │ &   │ *   │ (   │ )   │ _   │ + ± ┃          ┃
+  // │ `   │ 1 „ │ 2 “ │ 3 ” │ 4 £ │ 5 € │ 6   │ 7   │ 8   │ 9   │ 0 ° │ - — │ = ≠ ┃ ⌫        ┃
   // ┢━━━━━┷━━┱──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┺━━┳━━━━━━━┫
   // ┃        ┃ Q   │ W   │ E   │ R ™ │ T   │ Y   │ U   │ I   │ O   │ P   │ « { │ » } ┃       ┃
-  // ┃ ↹      ┃   æ │   é │   è │   ® │   þ │     │   ù │   ↑ │   œ │   § │ ^ [ │ ´ ] ┃       ┃
+  // ┃ ↹      ┃   æ │   é │   è │   ® │   þ │   ¥ │   ù │   ĳ │   œ │   § │ ^ [ │ ¨ ] ┃       ┃
   // ┣━━━━━━━━┻┱────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┺┓  ⏎   ┃
-  // ┃         ┃ A   │ S   │ D   │ F ª │ G ¢ │ H   │ J   │ K   │ L   │ ¨   │ "   │ |   ┃      ┃
-  // ┃ ⇬       ┃   à │   ß │   ð │   ſ │   © │   † │   ← │   ↓ │   → │ ¤ ` │ '   │ \   ┃      ┃
+  // ┃         ┃ A   │ S   │ D   │ F ª │ G ¢ │ H   │ J   │ K   │ L   │ ¤   │ "   │ |   ┃      ┃
+  // ┃ ⇬       ┃   à │   ß │   ð │   ſ │   © │   ← │   ↓ │   ↑ │   → │   ` │ '   │ \   ┃      ┃
   // ┣━━━━━━┳━━┹──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┲━━┷━━━━━┻━━━━━━┫
   // ┃      ┃ >   │ Z   │ X   │ C   │ V   │ B   │ N   │ M º │ ;   │ :   │ ? ¿ ┃               ┃
-  // ┃ ⇧    ┃ <   │   < │   > │   ç │   ŭ │     │   ñ │   µ │ , • │ . … │ / \ ┃ ⇧             ┃
+  // ┃ ⇧    ┃ <   │   < │   > │   ç │   ŭ │   † │   ñ │   µ │ , • │ . … │ / \ ┃ ⇧             ┃
   // ┣━━━━━━┻┳━━━━┷━━┳━━┷━━━━┱┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━━┳━┷━━━━━╋━━━━━━━┳━━━━━━━┫
   // ┃       ┃       ┃       ┃ ⍽ Espace insécable             ┃       ┃       ┃       ┃       ┃
   // ┃ Ctrl  ┃ super ┃ Alt   ┃ ␣ Espace                     ` ┃ AltGr ┃ super ┃ menu  ┃ Ctrl  ┃
@@ -64,19 +63,19 @@ xkb_keymap {
   // Couche AltGr :
   // ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━━━━┓
   // │     │     │     │     │     │     │     │     │     │     │     │     │     ┃          ┃
-  // │   # │   ! │   ( │   ) │   = │   ? │     │   7 │   8 │   9 │     │     │     ┃ ⌫        ┃
+  // │   # │   ! │   ( │   ) │   = │   ? │     │   7 │   8 │   9 │   / │     │     ┃ ⌫        ┃
   // ┢━━━━━┷━━┱──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┺━━┳━━━━━━━┫
   // ┃        ┃     │     │     │     │     │     │     │     │     │     │     │     ┃       ┃
-  // ┃ ↹      ┃   - │   < │   > │   / │   \ │     │   4 │   5 │   6 │     │     │     ┃       ┃
+  // ┃ ↹      ┃   - │   < │   > │   / │   \ │     │   4 │   5 │   6 │   * │     │     ┃       ┃
   // ┣━━━━━━━━┻┱────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┺┓  ⏎   ┃
   // ┃         ┃     │     │     │     │     │     │     │     │     │     │     │     ┃      ┃
-  // ┃ ⇬       ┃   { │   [ │   ] │   } │   | │     │   1 │   2 │   3 │     │     │     ┃      ┃
+  // ┃ ⇬       ┃   { │   [ │   ] │   } │   | │     │   1 │   2 │   3 │   - │     │     ┃      ┃
   // ┣━━━━━━┳━━┹──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┬──┴──┲━━┷━━━━━┻━━━━━━┫
   // ┃      ┃     │     │     │     │     │     │     │     │     │     │     ┃               ┃
-  // ┃ ⇧    ┃     │     │     │     │     │     │     │   0 │   , │   . │     ┃ ⇧             ┃
+  // ┃ ⇧    ┃     │     │     │     │     │     │     │   0 │   , │   . │   + ┃ ⇧             ┃
   // ┣━━━━━━┻┳━━━━┷━━┳━━┷━━━━┱┴─────┴─────┴─────┴─────┴─────┴─┲━━━┷━━━┳━┷━━━━━╋━━━━━━━┳━━━━━━━┫
   // ┃       ┃       ┃       ┃                                ┃       ┃       ┃       ┃       ┃
-  // ┃ Ctrl  ┃ super ┃ Alt   ┃ ␣ Échapp                       ┃ AltGr ┃ super ┃ menu  ┃ Ctrl  ┃
+  // ┃ Ctrl  ┃ super ┃ Alt   ┃ ␣                              ┃ AltGr ┃ super ┃ menu  ┃ Ctrl  ┃
   // ┗━━━━━━━┻━━━━━━━┻━━━━━━━┹────────────────────────────────┺━━━━━━━┻━━━━━━━┻━━━━━━━┻━━━━━━━┛
 
   partial alphanumeric_keys modifier_keys
@@ -87,10 +86,6 @@ xkb_keymap {
       include "pc"
 
       // Chiffres
-      key <TLDE> {
-        type[group1] = "FOUR_LEVEL", [ grave, asciitilde, dead_grave, dead_tilde ],
-        type[group2] = "TWO_LEVEL" , [ numbersign, asciitilde ]
-      };
       key <AE01> {
         type[group1] = "FOUR_LEVEL", [ 1, exclam, doublelowquotemark, exclamdown ],
         type[group2] = "TWO_LEVEL" , [ exclam, exclamdown ]
@@ -104,11 +99,11 @@ xkb_keymap {
         type[group2] = "TWO_LEVEL" , [ parenright ]
       };
       key <AE04> {
-        type[group1] = "FOUR_LEVEL", [ 4, dollar, EuroSign, sterling ],
+        type[group1] = "FOUR_LEVEL", [ 4, dollar, sterling, cent ],
         type[group2] = "TWO_LEVEL" , [ equal, notequal ]
       };
       key <AE05> {
-        type[group1] = "FOUR_LEVEL", [ 5, percent, yen, U2030 ],
+        type[group1] = "FOUR_LEVEL", [ 5, percent, EuroSign, U2030 ],
         type[group2] = "TWO_LEVEL" , [ question, questiondown ]
       };
       key <AE06> {
@@ -129,7 +124,7 @@ xkb_keymap {
       };
       key <AE10> {
         type[group1] = "FOUR_LEVEL", [ 0, parenright, degree, VoidSymbol ],
-        type[group2] = "TWO_LEVEL" , [ VoidSymbol, VoidSymbol ]
+        type[group2] = "TWO_LEVEL" , [ slash, VoidSymbol ]
       };
 
       // Lettres, première rangée
@@ -154,7 +149,7 @@ xkb_keymap {
         type[group2] = "TWO_LEVEL" , [ backslash, VoidSymbol ]
       };
       key <AD06> {
-        type[group1] = "FOUR_LEVEL", [ y, Y, VoidSymbol, VoidSymbol ],
+        type[group1] = "FOUR_LEVEL", [ y, Y, yen, currency ],
         type[group2] = "TWO_LEVEL" , [ VoidSymbol, VoidSymbol ]
       };
       key <AD07> {
@@ -162,7 +157,7 @@ xkb_keymap {
         type[group2] = "TWO_LEVEL" , [ 4, VoidSymbol, VoidSymbol ]
       };
       key <AD08> {
-        type[group1] = "FOUR_LEVEL", [ i, I, uparrow, U21D1 ],
+        type[group1] = "FOUR_LEVEL", [ i, I, U0133, U0132 ],
         type[group2] = "TWO_LEVEL" , [ 5, VoidSymbol ]
       };
       key <AD09> {
@@ -171,7 +166,7 @@ xkb_keymap {
       };
       key <AD10> {
         type[group1] = "FOUR_LEVEL", [ p, P, section, paragraph ],
-        type[group2] = "TWO_LEVEL" , [ VoidSymbol, VoidSymbol ]
+        type[group2] = "TWO_LEVEL" , [ asterisk, VoidSymbol ]
       };
 
       // Lettres, deuxième rangée
@@ -196,15 +191,15 @@ xkb_keymap {
         type[group2] = "TWO_LEVEL" , [ bar, brokenbar ]
       };
       key <AC06> {
-        type[group1] = "FOUR_LEVEL", [ h, H, dagger, doubledagger ],
+        type[group1] = "FOUR_LEVEL", [ h, H, leftarrow, U21D0 ],
         type[group2] = "TWO_LEVEL" , [ VoidSymbol, VoidSymbol ]
       };
       key <AC07> {
-        type[group1] = "FOUR_LEVEL", [ j, J, leftarrow, U21D0 ],
+        type[group1] = "FOUR_LEVEL", [ j, J, downarrow, U21D3 ],
         type[group2] = "TWO_LEVEL" , [ 1, VoidSymbol ]
       };
       key <AC08> {
-        type[group1] = "FOUR_LEVEL", [ k, K, downarrow, U21D3 ],
+        type[group1] = "FOUR_LEVEL", [ k, K, uparrow, U21D1 ],
         type[group2] = "TWO_LEVEL" , [ 2, VoidSymbol ]
       };
       key <AC09> {
@@ -212,8 +207,8 @@ xkb_keymap {
         type[group2] = "TWO_LEVEL" , [ 3, VoidSymbol ]
       };
       key <AC10> {
-        type[group1] = "FOUR_LEVEL", [ ISO_Level3_Latch, dead_diaeresis, grave ],
-        type[group2] = "TWO_LEVEL" , [ VoidSymbol, VoidSymbol ]
+        type[group1] = "FOUR_LEVEL", [ ISO_Level3_Latch, ISO_Level3_Latch, grave, grave ],
+        type[group2] = "TWO_LEVEL" , [ minus, VoidSymbol ]
       };
 
       // Lettres, troisième rangée
@@ -234,7 +229,7 @@ xkb_keymap {
         type[group2] = "TWO_LEVEL" , [ plus, plusminus ]
       };
       key <AB05> {
-        type[group1] = "FOUR_LEVEL", [ b, B, VoidSymbol, VoidSymbol ],
+        type[group1] = "FOUR_LEVEL", [ b, B, dagger, doubledagger ],
         type[group2] = "TWO_LEVEL" , [ equal, notequal ]
       };
       key <AB06> {
@@ -246,7 +241,7 @@ xkb_keymap {
         type[group2] = "TWO_LEVEL" , [ 0, VoidSymbol ]
       };
       key <AB08> {
-        type[group1] = "FOUR_LEVEL", [ comma, semicolon, U2022 ],
+        type[group1] = "FOUR_LEVEL", [ comma, semicolon, U2022, VoidSymbol ],
         type[group2] = "TWO_LEVEL" , [ comma, VoidSymbol ]
       };
       key <AB09> {
@@ -255,10 +250,15 @@ xkb_keymap {
       };
       key <AB10> {
         type[group1] = "FOUR_LEVEL", [ slash, question, backslash, questiondown ],
-        type[group2] = "TWO_LEVEL" , [ VoidSymbol, VoidSymbol ]
+        type[group2] = "TWO_LEVEL" , [ plus, VoidSymbol ]
       };
 
       // Touches à la con
+      // (car excentrées, et souvent déplacées sur les claviers ergonomiques)
+      key <TLDE> {
+        type[group1] = "FOUR_LEVEL", [ grave, asciitilde, dead_grave, dead_tilde ],
+        type[group2] = "TWO_LEVEL" , [ dead_grave, dead_tilde ]
+      };
       key <AE11> {
         type[group1] = "FOUR_LEVEL", [ minus, underscore, emdash, endash ],
         type[group2] = "TWO_LEVEL" , [ VoidSymbol, VoidSymbol ]
@@ -272,12 +272,12 @@ xkb_keymap {
         type[group2] = "TWO_LEVEL" , [ VoidSymbol, VoidSymbol ]
       };
       key <AD12> {
-        type[group1] = "FOUR_LEVEL", [ dead_acute, guillemotright, bracketright, braceright ],
+        type[group1] = "FOUR_LEVEL", [ dead_diaeresis, guillemotright, bracketright, braceright ],
         type[group2] = "TWO_LEVEL" , [ VoidSymbol, VoidSymbol ]
       };
       key <AC11> {
-        type[group1] = "FOUR_LEVEL", [ apostrophe, quotedbl, grave, dead_abovedot ],
-        type[group2] = "TWO_LEVEL" , [ grave, dead_abovedot ]
+        type[group1] = "FOUR_LEVEL", [ apostrophe, quotedbl, dead_acute, dead_abovedot ],
+        type[group2] = "TWO_LEVEL" , [ dead_acute, dead_abovedot ]
       };
       key <BKSL> {
         type[group1] = "FOUR_LEVEL", [ backslash, bar, VoidSymbol, VoidSymbol ],
@@ -287,15 +287,24 @@ xkb_keymap {
         type[group1] = "FOUR_LEVEL", [ less, greater, lessthanequal, greaterthanequal ],
         type[group2] = "TWO_LEVEL" , [ lessthanequal, greaterthanequal ]
       };
+
+      // Espace
       key <SPCE> {
         type[group1] = "FOUR_LEVEL", [ space, nobreakspace, rightsinglequotemark, U202F ],
-        type[group2] = "TWO_LEVEL" , [ Escape, nobreakspace ]
+        type[group2] = "TWO_LEVEL" , [ space, nobreakspace ]
       };
 
       // AltGr
       key <RALT> { [ VoidSymbol ], actions = [ SetGroup(group=2) ] };
+
+      // Optionnel : Esc <-> Caps (Vim…)
+      // include "capslock(swapescape)"
+
+      // Optionnel : Compose sur Menu
+      // key <MENU> { [ Multi_key ] };
   };
 
   //xkb_geometry { include "pc(pc105)" };
 };
 
+// vim: ft=xkb:fdm=indent:
